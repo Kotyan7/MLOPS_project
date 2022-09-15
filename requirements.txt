@@ -1,0 +1,8 @@
+numpy
+sklearn
+Flask
+pandas
+clearml
+tqdm
+boto3
+pytest

@@ -1,6 +1,11 @@
 import pytest
+import os.path
 import sys
-sys.path.append('..')
+
+# go up one directory level from this file's directory:
+path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+# prepend parent directory to the system path:
+sys.path.insert(0, path)
 
 from src.app import ab
 

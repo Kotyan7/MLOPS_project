@@ -8,7 +8,7 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD ['export PYTHONPATH="$PYTHONPATH:$pwd"']
+ENV PYTHONPATH "${PYTHONPATH}:/app/"
 
 ENTRYPOINT ["python"]
 

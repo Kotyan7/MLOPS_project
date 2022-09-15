@@ -8,7 +8,7 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-ENV PYTHONPATH "${PYTHONPATH}:/app/"
+ENV PYTHONPATH "${PYTHONPATH}:/app"
 
 ENTRYPOINT ["python"]
 

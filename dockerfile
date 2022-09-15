@@ -8,8 +8,6 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-ENV PYTHONPATH "${PYTHONPATH}:/app"
-
 ENTRYPOINT ["python"]
 
 CMD ["./src/app.py"]

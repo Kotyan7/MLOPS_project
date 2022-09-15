@@ -1,5 +1,10 @@
 import pytest
-from ..src.app import ab
+import sys
+sys.path.append('..')
+from src.app import ab
+
+
+
 def test_2_add_2():
     print("test")
 

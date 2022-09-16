@@ -7,6 +7,7 @@ path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 # prepend parent directory to the system path:
 sys.path.insert(0, path)
 
+
 from src.app import ab
 
 def test_2_add_2():
